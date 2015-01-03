@@ -1,6 +1,6 @@
 {
   "name": "webplay",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Browser based video player",
   "dependencies": {
     "concat-stream": "^1.4.7",
