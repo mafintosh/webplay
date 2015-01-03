@@ -1,0 +1,39 @@
+{
+  "name": "webplay",
+  "version": "0.0.0",
+  "description": "Browser based video player",
+  "dependencies": {
+    "concat-stream": "^1.4.7",
+    "filereader-stream": "^0.2.0",
+    "add-event-listener": "^0.0.1",
+    "drag-and-drop-files": "^0.0.1",
+    "srt-to-vtt": "^1.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^8.0.3",
+    "html-inline": "^1.1.1",
+    "wzrd": "^1.1.0"
+  },
+  "scripts": {
+    "start": "wzrd index.js:bundle.js",
+    "build": "browserify index.js > bundle.js",
+    "inline": "browserify index.js > bundle.js && html-inline index.html",
+    "htmlbin": "browserify index.js > bundle.js && html-inline index.html | curl -sT- https://htmlb.in"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/webplay"
+  },
+  "keywords": [
+    "html5",
+    "video",
+    "web",
+    "browser"
+  ],
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/webplay/issues"
+  },
+  "homepage": "https://github.com/mafintosh/webplay"
+}

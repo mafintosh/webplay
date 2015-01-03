@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>webplay</title>
+  <style>
+    html, body {
+      font-family: Helvetica;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #eee;
+      width: 100%;
+      height: 100%;      
+    }
+
+    #menu {
+      width: 715px;
+      margin: auto;
+      margin-top: 200px;
+      font-size: 30px;
+    }
+
+    #file {
+      width: 140px;
+      text-align: center;
+      background-color: #2196f3;
+      color: #fff;
+      float: left;
+      padding: 20px 30px;
+      border-radius: 3px;
+      box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+      transition: box-shadow cubic-bezier(0.35, 0, 0.25, 1), cubic-bezier(0.35, 0, 0.25, 1), cubic-bezier(0.35, 0, 0.25, 1) 0.5s;
+    }
+
+    #file:hover {
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px 0px;
+      transform: matrix(1, 0, 0, 1, 0, -1);
+    }
+
+    #file, #or, #url {
+      line-height: 40px;      
+    }
+
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color:    #2196f3;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    #2196f3;
+       opacity:  1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    #2196f3;
+       opacity:  1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+       color:    #2196f3;
+    }
+
+    #file, #or {
+      user-select: none;
+      -webkit-user-select: none;
+      cursor: default;
+    }
+
+    #or {
+      width: 25px;
+      float: left;
+      margin: 0 10px;
+      padding: 19px;
+      color: #333;
+    }
+
+    #url {
+      width: 425px;
+      font-size: 30px;
+      border-radius: 3px;
+      outline: 0;
+      padding: 20px;
+      border: none;
+      color: #2196f3;
+    }
+
+    #hidden-file {
+      display: none;
+    }
+
+    video {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <div id="file">select file</div><div id="or">or</div><input id="url" type="text" placeholder="paste a url and press enter" autofocus>
+  </div>
+  <div id="video">
+    <video controls crossorigin="anonymous"></video>
+  </div>
+  <input id="hidden-file" type="file">
+  <script src="bundle.js"></script>
+</body>
+</html>
