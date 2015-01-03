@@ -1,10 +1,9 @@
 # webplay
 
-Browser based video player
-
+Browser based video player featuring support for drag and drop of files (and subtitles).
 Try it here:
 
-https://4c1844db783cf776a3d397bf8d1a73ed0c98abf1.htmlb.in/
+https://85d514b3e548d934d8ff7c45a54732e65a3162fe.htmlb.in/
 
 ## Development
 
