@@ -3,7 +3,7 @@
 Browser based video player featuring support for drag and drop of files (and subtitles).
 Try it here:
 
-https://85d514b3e548d934d8ff7c45a54732e65a3162fe.htmlb.in/
+https://060f9c8fa729ff66a38c2475cc3a781c92ddaa89.htmlb.in
 
 ## Development
 
